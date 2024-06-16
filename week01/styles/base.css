@@ -1,0 +1,172 @@
+body {
+    font-family: 'Tahoma', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    border: 2px solid #003366;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 100%;
+    background-color: #003366;
+    padding: 1em 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0056b3;
+    padding: 0.5em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #003366;
+    border-radius: 0.25em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 0.25em;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: #0056b3;
+    color: white;
+    padding: 0.5em;
+    margin-top: 0;
+    border-radius: 0.25em 0.25em 0 0;
+}
+
+.centered-title {
+    text-align: center;
+}
+
+.about-me {
+    flex: 2;
+    position: relative;
+}
+
+.resources {
+    flex: 1;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.text-description {
+    flex: 1;
+    text-align: left;
+}
+
+.image-container {
+    flex: 0 0 2in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.image-description {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.top-right {
+    margin-left: 1em;
+}
+
+.bottom-left {
+    align-self: flex-end;
+    margin-right: 1em;
+}
+
+.centered {
+    text-align: center;
+    color: #0056b3;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.demarcation-line {
+    border: none;
+    border-top: 1px solid #aaa;
+    width: 50%;
+    margin: 0.5em auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #003366;
+    padding: 1em 0;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+.flower-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.footer-name {
+    margin: 0 0.5em;
+}
+
+.highlight {
+    color: yellow;
+}
