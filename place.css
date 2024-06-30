@@ -1,0 +1,244 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    position: relative; /* Ensure body is relative for absolute positioning */
+}
+
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: center; /* Center header content */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Larger font size */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger on larger screens */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Left-align text in main section */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    position: relative; /* Relative positioning for absolute child elements */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+    position: relative; /* Relative positioning for image container */
+}
+
+figure img {
+    max-width: 100%; /* Ensure images resize based on container */
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #0056b3;
+}
+
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.basketball-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* Specific styles for Palawan project */
+.data,
+.weather {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 0.5em; /* Reduced padding */
+    margin: 1em; /* Adjusted margin */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 40px); /* Initial width for larger screens */
+    position: absolute;
+    max-width: 300px; /* Ensure maximum width */
+    box-sizing: border-box; /* Ensure padding and border don't exceed width */
+}
+
+.data {
+    top: 20px;
+    left: 20px;
+}
+
+.data h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #0056b3; /* Blue banner background */
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+.data h2::after {
+    content: '🌍'; /* Changed icon for Data section */
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.data dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1em;
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.data dt {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 0;
+}
+
+.data dd {
+    margin-bottom: 0;
+}
+
+.weather {
+    bottom: 20px; /* Adjusted to place it lower */
+    left: 20px; /* Adjusted to place it to the left */
+    max-width: 300px; /* Ensure maximum width */
+}
+
+.weather h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #0056b3; /* Blue banner background */
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+.weather h2::after {
+    content: '⛅';
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.weather-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5em; /* Tightened the gap between items */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.weather dt {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 0;
+}
+
+.weather dd {
+    margin-bottom: 0;
+}
+
+.data dd,
+.weather dd {
+    margin-bottom: 0; /* Remove bottom margin to make content tight */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+    .data,
+    .weather {
+        position: static; /* Reset positioning for mobile view */
+        width: auto; /* Reset width for mobile view */
+        margin-bottom: 0; /* Add margin for spacing */
+        max-width: calc(100% - 40px); /* Adjusted maximum width */
+    }
+
+
+
+    header {
+        flex-direction: column; /* Stack header items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide nav items by default */
+        position: absolute;
+        top: 60px; /* Adjust as necessary */
+        left: 0;
+        width: 100%;
+        background-color: #0056b3; /* Blue background for nav on mobile */
+    }
+
+    nav ul.show {
+        display: flex; /* Show nav items when hamburger is clicked */
+        flex-direction: column;
+    }
+}

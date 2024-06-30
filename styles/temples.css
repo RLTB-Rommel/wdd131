@@ -25,10 +25,39 @@ header h1 {
     text-align: left; /* Align to the left */
 }
 
+.hamburger {
+    display: block; /* Show hamburger only on mobile */
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* White color for hamburger lines */
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
 nav ul {
     list-style-type: none;
+    display: none; /* Hide nav items by default */
+}
+
+nav ul.show {
     display: flex;
-    gap: 20px; /* Adjust spacing between menu items */
+    flex-direction: column;
+    background-color: #0056b3; /* Blue background for nav on mobile */
+    position: absolute;
+    top: 60px; /* Adjust as necessary */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999; /* Ensure it overlays other content */
+}
+
+nav ul.show li {
+    text-align: center;
+    margin: 10px 0;
 }
 
 nav a {
@@ -67,7 +96,6 @@ figure img {
 
 figcaption {
     margin-top: 10px;
-    
     color: #0056b3;
 }
 
@@ -94,4 +122,17 @@ footer p {
 
 .highlight {
     color: yellow;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+
+    nav ul {
+        display: flex; /* Show nav items on larger screens */
+        justify-content: center;
+        align-items: center;
+    }
 }

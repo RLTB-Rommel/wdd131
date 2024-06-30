@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rommel F. Aunario</title>
+    <meta name="description" content="Country - WDD 131 - Dynamic Web Fundamentals - Rommel F. Aunario">
+    <meta name="author" content="Rommel F. Aunario">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/wind_dates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Palawan</h1>
+    </header>
+    <main>
+
+        <section class="hero">
+            <picture>
+                <!-- WebP sources -->
+                <source srcset="images/island-mobile.webp 610w,
+                                images/island-tablet.webp 768w,
+                                images/island-desktop.webp 1024w"
+                        sizes="(max-width: 767px) 100vw,
+                               (max-width: 1023px) 100vw,
+                               1024px"
+                        type="image/webp">
+                
+                <!-- Fallback for browsers that do not support WebP -->
+                <img srcset="images/island-mobile.jpg 610w,
+                             images/island-tablet.jpg 768w,
+                             images/island-desktop.jpg 1024w"
+                     sizes="(max-width: 767px) 100vw,
+                            (max-width: 1023px) 100vw,
+                            1024px"
+                     src="images/island-mobile.jpg" alt="Palawan Island">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area :</dt>
+                <dd>1,489 sq mi</dd>
+                <dt>Population :</dt>
+                <dd>1.2 million</dd>
+                <dt>Capital :</dt>
+                <dd>Puerto Princesa</dd>
+                <dt>Languages :</dt>
+                <dd>Tagalog, English</dd>
+                <dt>Currency :</dt>
+                <dd>Philippine Peso (₱)</dd>
+                <dt>Time Zone :</dt>
+                <dd>GMT+8</dd>
+                <dt>Calling Code :</dt>
+                <dd>+63</dd>
+                <dt>Internet TLD :</dt>
+                <dd>.ph</dd>
+            </dl>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <dl class="weather-info">
+                <div>
+                    <dt>Temperature:</dt>
+                    <dd>30°C</dd>
+                </div>
+                <div>
+                    <dt>Conditions:</dt>
+                    <dd>Sunny</dd>
+                </div>
+                <div>
+                    <dt>Wind:</dt>
+                    <dd>15 km/h</dd>
+                </div>
+                <div>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="windChill"></span></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span class="footer-name"><img src="images/basketball-icon.png" alt="basketball-icon" class="basketball-icon">Rommel F. Aunario</span> <img src="images/basketball-icon.png" alt="basketball-icon" class="basketball-icon"> Palawan</p>
+        <p id="lastModified" class="highlight"></p>
+    </footer>
+</body>
+</html>
