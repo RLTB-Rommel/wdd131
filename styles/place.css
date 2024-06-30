@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
     position: relative; /* Ensure body is relative for absolute positioning */
@@ -154,7 +154,7 @@ footer p {
     vertical-align: middle;
     width: 24px; /* Adjust width */
     height: 24px; /* Adjust height */
-    background-image: url('images/sunny.svg'); /* Path to your SVG icon */
+    background-image: url('wdd131/images/sunny.svg'); /* Path to your SVG icon */
     background-size: contain;
     background-repeat: no-repeat;
 }
