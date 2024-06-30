@@ -1,4 +1,10 @@
-/* Reset and basic styles */
+/* Global variables */
+:root {
+    --main-color: #0056b3;
+    --secondary-color: #fff;
+    --base-font-size: 16px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -86,8 +92,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -108,15 +115,17 @@ footer p {
 /* Specific styles for Palawan project */
 .data,
 .weather {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    padding: 1em; /* Reduced padding */
-    margin: 1em; /* Adjusted margin */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    margin: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 40px); /* Initial width for larger screens */
+    width: calc(50% - 20px);
+    max-width: 300px;
+    box-sizing: border-box;
     position: absolute;
-    max-width: 300px; /* Ensure maximum width */
-    box-sizing: border-box; /* Ensure padding and border don't exceed width */
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .data {
@@ -124,109 +133,96 @@ footer p {
     left: 20px;
 }
 
-.data h2 {
-    position: relative;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-    text-align: center;
-    background-color: #0056b3; /* Blue banner background */
-    color: #fff;
-    padding: 0.5em 1em;
-    border-radius: 8px;
-}
-
-.data h2::after {
-    content: '🌍'; /* Changed icon for Data section */
-    display: inline-block;
-    margin-left: 0.5em;
-    vertical-align: middle;
-    font-size: 1.5rem;
-}
-
-.data dl {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 1em;
-    font-size: 1rem; /* Adjusted font size */
-}
-
-.data dt {
-    font-weight: bold; /* Make labels bold */
-    margin-bottom: 0.5em;
-}
-
-.data dd {
-    margin-bottom: 0.5em;
-}
-
 .weather {
-    bottom: 20px;
-    right: 20px; /* Adjust to place it in the lower right corner */
+    bottom: 100px;
+    right: 70px;
 }
 
+.data:hover,
+.weather:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.data h2,
 .weather h2 {
     position: relative;
     display: inline-block;
     font-size: 1.5rem;
     margin-bottom: 1em;
     text-align: center;
-    background-color: #0056b3; /* Blue banner background */
+    background-color: #0056b3;
     color: #fff;
     padding: 0.5em 1em;
     border-radius: 8px;
 }
 
+.data h2::after {
+    content: '';
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background-image: url('wdd131/images/sunny.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .weather h2::after {
-    content: '⛅';
+    content: '⛅'; /* Emoticon for wider view */
     display: inline-block;
     margin-left: 0.5em;
     vertical-align: middle;
     font-size: 1.5rem;
 }
 
-.weather-info p {
-    margin: 0.5em 0;
-    font-size: 1rem; /* Adjusted font size */
+.data dl,
+.weather dl {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.1rem;
+    font-size: 1rem;
 }
 
-.wind-banner {
-    background-color: #81c784; /* Light green color for wind banner */
-    color: #fff;
-    padding: 0.5em;
-    text-align: center;
-    margin-top: 1em;
-    border-radius: 8px;
+.data dt,
+.weather dt {
+    font-weight: bold;
+}
+
+.data dd,
+.weather dd {
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
     .data,
     .weather {
-        position: static; /* Reset positioning for mobile view */
-        width: auto; /* Reset width for mobile view */
-        margin-bottom: 1.5em; /* Add margin for spacing */
+        position: static;
+        width: auto;
+        margin-bottom: 0.5em;
+        transform: none;
+        box-shadow: none;
     }
 
     header {
-        flex-direction: column; /* Stack header items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger on small screens */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav ul {
-        display: none; /* Hide nav items by default */
+        display: none;
         position: absolute;
-        top: 60px; /* Adjust as necessary */
+        top: 60px;
         left: 0;
         width: 100%;
-        background-color: #0056b3; /* Blue background for nav on mobile */
+        background-color: #0056b3;
     }
 
     nav ul.show {
-        display: flex; /* Show nav items when hamburger is clicked */
+        display: flex;
         flex-direction: column;
     }
 }
