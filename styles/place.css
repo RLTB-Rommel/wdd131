@@ -159,19 +159,15 @@ footer p {
 }
 
 .data h2::after {
-    content: '';
+    content: '📊'; /* Emoticon for data */
     display: inline-block;
     margin-left: 0.5em;
     vertical-align: middle;
-    width: 24px;
-    height: 24px;
-    background-image: url('wdd131/images/sunny.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .weather h2::after {
-    content: '⛅'; /* Emoticon for wider view */
+    content: '⛅'; /* Emoticon for weather */
+    background-image: url('../images/sunny-weather.svg');
     display: inline-block;
     margin-left: 0.5em;
     vertical-align: middle;
