@@ -147,9 +147,20 @@ footer p {
     border-radius: 8px;
 }
 
-.data h2::after,
+.data h2::after {
+    content: ''; /* Clear content */
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    background-image: url('images/sunny.svg'); /* Path to your SVG icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .weather h2::after {
-    content: '🌍'; /* Changed icon for Data section */
+    content: '⛅'; /* Emoticon for wider view */
     display: inline-block;
     margin-left: 0.5em;
     vertical-align: middle;
@@ -177,7 +188,14 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
-    .data,
+    .data {
+        position: static; /* Reset positioning for mobile view */
+        width: auto; /* Reset width for mobile view */
+        margin-bottom: 0.5em; /* Add margin for spacing */
+        transform: none; /* Remove transform on mobile */
+        box-shadow: none; /* Remove shadow on mobile */
+    }
+
     .weather {
         position: static; /* Reset positioning for mobile view */
         width: auto; /* Reset width for mobile view */
