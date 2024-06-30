@@ -3,6 +3,7 @@
     --main-color: #0056b3;
     --secondary-color: #fff;
     --base-font-size: 16px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* New global variable */
 }
 
 * {
@@ -19,13 +20,13 @@ body {
 }
 
 header {
-    background-color: #0056b3;
-    color: #fff;
+    background-color: var(--main-color); /* Using global variable */
+    color: var(--secondary-color); /* Using global variable */
     padding: 1em;
     display: flex;
     justify-content: center; /* Center header content */
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+    box-shadow: var(--box-shadow); /* Using global variable */
 }
 
 header h1 {
@@ -45,7 +46,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color); /* Using global variable */
     padding: 0.5em 1em;
     transition: background-color 0.3s ease;
 }
@@ -60,7 +61,7 @@ main {
     padding: 20px;
     text-align: left; /* Left-align text in main section */
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+    box-shadow: var(--box-shadow); /* Using global variable */
     border-radius: 8px; /* Rounded corners */
     position: relative; /* Relative positioning for absolute child elements */
 }
@@ -84,12 +85,12 @@ figure img {
 
 figcaption {
     margin-top: 10px;
-    color: #0056b3;
+    color: var(--main-color); /* Using global variable */
 }
 
 footer {
-    background-color: #0056b3;
-    color: #fff;
+    background-color: var(--main-color); /* Using global variable */
+    color: var(--secondary-color); /* Using global variable */
     text-align: center;
     padding: 1em 0;
     position: relative;
@@ -119,7 +120,7 @@ footer p {
     padding: 0.5em;
     margin: 1em;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow); /* Using global variable */
     width: calc(50% - 20px);
     max-width: 300px;
     box-sizing: border-box;
@@ -151,8 +152,8 @@ footer p {
     font-size: 1.5rem;
     margin-bottom: 1em;
     text-align: center;
-    background-color: #0056b3;
-    color: #fff;
+    background-color: var(--main-color); /* Using global variable */
+    color: var(--secondary-color); /* Using global variable */
     padding: 0.5em 1em;
     border-radius: 8px;
 }
@@ -218,7 +219,7 @@ footer p {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #0056b3;
+        background-color: var(--main-color); /* Using global variable */
     }
 
     nav ul.show {
