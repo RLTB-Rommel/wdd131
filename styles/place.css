@@ -1,4 +1,9 @@
-/* Reset and basic styles */
+/* Global variables */
+:root {
+    --main-color: #0056b3;
+    --secondary-color: #fff;
+    --base-font-size: 16px;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +15,7 @@ body {
     line-height: 1.6;
     background-color: #f0f0f0;
     position: relative; /* Ensure body is relative for absolute positioning */
+    font-size: var(--base-font-size);
 }
 
 header {
