@@ -6,9 +6,9 @@
     <title>Solarplants - WDD 131 - Dynamic Web Fundamentals - Rommel F. Aunario</title>
     <meta name="description" content="Solarplant Album - WDD 131 - Dynamic Web Fundamentals - Rommel F. Aunario">
     <meta name="author" content="Rommel F. Aunario">
-    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-solar.css">
     <link rel="stylesheet" href="styles/final_project.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/filtered-solar-large.css" media="screen and (min-width: 768px)">
     <script defer src="scripts/final_project.js"></script>
     <style>
         header {
@@ -21,17 +21,21 @@
     </style>
 </head>
 <body>
+    <div class="burger-nav">
     <div class="top-banner">
         <nav>
-            <a href="https://pssea.ph/who-we-are/">Photovoltaic Philippines</a>
-            <a href="https://www.bloomberg.com/view/articles/2018-01-29/it-matters-where-solar-panels-are-made">Reviews</a>
-            <a href="about.html">About Us</a>
+            <ul>
+                <li><a href="https://pssea.ph/who-we-are/">Photovoltaic Philippines</a></li>
+                <li><a href="https://www.bloomberg.com/view/articles/2018-01-29/it-matters-where-solar-panels-are-made">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
         </nav>
         <div class="contact-icons">
             <a href="tel:+11234567890"><i class="fas fa-phone-alt"></i> +1 (123) 456-7890</a>
             <a href="#"><i class="fas fa-comment-alt"></i> Live Chat</a>
             <a href="https://rltb-rommel.github.io/wdd131/"><i class="fas fa-info-circle"></i> Info</a>
         </div>
+    </div>
     </div>
 
     <div class="secondary-banner">
@@ -148,11 +152,11 @@
             <fieldset>
                 <nav>
                     <ul>
-                        <li><a href="#">All Projects</a></li>
-                        <li><a href="#">Old Projects</a></li>
-                        <li><a href="#">New  Projects</a></li>
-                        <li><a href="#">Large Land Areas</a></li>
-                        <li><a href="#">Small Land Areas</a></li>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Old</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Large</a></li>
+                        <li><a href="#">Small</a></li>
                     </ul>
                 </nav>
                 <h2>.</h2>
@@ -185,6 +189,16 @@
                 </div>
             </footer>
         
+            <script>
+                // JavaScript for toggling burger navigation
+                
+                const burgerNav = document.querySelector('.burger-nav');
+        
+                hamburger.addEventListener('click', () => {
+                    burgerNav.classList.toggle('open');
+                });
+            </script>
+            
             <script>
                 const solarplants = [
                     {

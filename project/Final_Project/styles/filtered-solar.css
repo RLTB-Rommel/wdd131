@@ -1,0 +1,209 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background: url('images/home_solar.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    height: 480px; /* Adjust as necessary */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0056b3;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: block; /* Show hamburger only on mobile */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, p {
+        margin: 0; /* Remove default margins */
+    }
+
+    /* Media query for mobile view */
+    @media screen and (max-width: 767px) {
+        header h1, header p {
+            display: none; /* Hide h1 and p in mobile view */
+        }
+    }
+
+    /* Styles for burger navigation */
+    .burger-nav {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+        padding: 1rem 0;
+    }
+
+    .burger-nav.open {
+        display: block; /* Show when open */
+    }
+
+    .burger-nav nav {
+        text-align: center;
+    }
+
+    .burger-nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .burger-nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    .burger-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .burger-nav ul li a:hover {
+        text-decoration: underline;
+    }
+/* Main section styles */
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center text in main section */
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-left,
+.footer-right {
+    padding: 1em;
+}
+
+.social-icons a {
+    margin-left: 1em;
+}
+
+.basketball-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+    /* Adjustments for larger screens */
+    main {
+        max-width: 80%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        display: flex; /* Show nav items on larger screens */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+}
