@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarplants - WDD 131 - Dynamic Web Fundamentals - Rommel F. Aunario</title>
+    <meta name="description" content="Solarplant Album - WDD 131 - Dynamic Web Fundamentals - Rommel F. Aunario">
+    <meta name="author" content="Rommel F. Aunario">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/final_project.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script defer src="scripts/final_project.js"></script>
+    <style>
+        header {
+            background: url('images/home_solar.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-banner">
+        <nav>
+            <a href="https://pssea.ph/who-we-are/">Photovoltaic Philippines</a>
+            <a href="https://www.bloomberg.com/view/articles/2018-01-29/it-matters-where-solar-panels-are-made">Reviews</a>
+            <a href="about.html">About Us</a>
+        </nav>
+        <div class="contact-icons">
+            <a href="tel:+11234567890"><i class="fas fa-phone-alt"></i> +1 (123) 456-7890</a>
+            <a href="#"><i class="fas fa-comment-alt"></i> Live Chat</a>
+            <a href="https://rltb-rommel.github.io/wdd131/"><i class="fas fa-info-circle"></i> Info</a>
+        </div>
+    </div>
+
+    <div class="secondary-banner">
+        <button class="book-now-btn" onclick="window.location.href='contact.html'">Order Now</button>
+    </div>
+    
+    <header>
+        <img src="images/logo-no.png" alt="Solar Tech Solutions" class="logo">
+        <h1>Solar Tech Solutions</h1>
+        <p>Fueling National Progress with Solar Power</p>
+        <a href="price.html" class="find-price-btn">Find Your Solutions</a>
+    </header>
+
+    <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <main>
+        <fieldset>
+            <div style="text-align: center; margin-top: 20px;">
+                <button onclick="toggleSection('start')">Get Started/Reservation</button>
+                <button onclick="toggleSection('home')">Why Choose Solar Tech Solutions?</button>
+                <button onclick="toggleSection('installation')">Solar Installation Types</button>
+                <button onclick="toggleSection('projects')">Commissioned Projects</button>
+                <button onclick="toggleSection('subscribe')">Subscribe</button>
+            </div> 
+        </fieldset>   
+
+        <section id="start" style="display:none;">
+            <fieldset>
+                <div class="reservation-box">
+                    <h2>Reservation</h2>
+                    <p>Reserve your Solar Tech Solutions services in advance to secure priority access and benefit from early acquisition incentives. Take advantage of our specialized solar solutions and optimize your energy infrastructure with precision and efficiency.</p>
+                    <button class="book-now-btn" onclick="window.location.href='contact.html'">Order Now</button>
+                </div>
+                <div class="activity-preparation-box">
+                    <h2>Get a Free Solar Assessment</h2>
+                    <p>Receive a complimentary Solar Assessment to evaluate the feasibility and benefits of integrating solar technology into your property. Our experts will conduct a thorough evaluation of your energy needs and site conditions.</p>
+                    <button class="get-started-btn" onclick="window.location.href='contact.html'">Get Started</button>
+                </div>
+            </fieldset>
+        </section>
+
+        <section id="home" style="display:none;">
+            <h2>Why Choose Solar Tech Solutions?</h2>
+            <ul>
+                <li><strong>HERITAGE</strong> Pioneering Solar Energy Solutions Since 2013 - Unmatched Experience</li>
+                <li><strong>TRUST</strong> Family Owned, a Decade of Commitment - Deep Industry Knowledge</li>
+                <li><strong>EXPERTISE</strong> Exclusive Focus on Solar Technologies - Unparalleled Specialization</li>
+                <li><strong>DIVERSITY</strong> Explore a Range of Sustainable Solutions - Choose from a Variety of Options</li>
+                <li><strong>FLEXIBILITY</strong> Tailored Solutions with 100% Customization - Ensuring Complete Satisfaction</li>
+                <li><strong>DEDICATION</strong> Our Commitment: Reliable After Sales Service Guaranteed - Your Assurance</li>
+            </ul>
+            <img id="ribbon-image" src="images/ribbon2.png" alt="Ribbon Image">
+        </section>
+
+        <div class="grid-container">
+            <!-- Grid items remain unchanged -->
+        </div>
+
+        <div class="row-container">
+            <!-- Newsletter form and YouTube video columns remain unchanged -->
+        </div>
+
+        <section id="installation" style="display:none;">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/residential_solar.jpg" alt="Solar Image 1">
+                    <h3>Residential Solar</h3>
+                    <p>Refers to the installation and use of solar energy systems on homes or residential properties. These systems typically consist of photovoltaic (PV) panels mounted on the roof or ground, which capture sunlight and convert it into electricity through a process known as the photovoltaic effect. Residential solar systems are designed to offset a homeowner's reliance on traditional grid electricity by generating clean, renewable energy directly from sunlight.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/commercial.jpg" alt="Solar Image 2">
+                    <h3>Commercial/Industrial Solar</h3>
+                    <p>Involves the deployment of solar energy systems on non-residential buildings and properties, such as businesses, factories, warehouses, and institutions. These installations are designed to harness solar power to meet the energy demands of large-scale operations and facilities.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/utility.jpg" alt="Solar Image 3">
+                    <h3>Utility Scale Solar</h3>
+                    <p>Refers to large-scale solar energy projects developed specifically to generate electricity for utility companies and large power consumers. These installations typically involve extensive arrays of photovoltaic (PV) panels deployed over vast land areas or integrated into existing utility infrastructure.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/community.jpg" alt="Solar Image 4">
+                    <h3>Community Solar</h3>
+                    <p>Refers to solar energy projects developed to provide renewable electricity to multiple participants within a local community. These installations enable individuals, businesses, or organizations to benefit from solar power without needing to install panels on their own properties.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" style="display:none;">
+            <div class="row-container">
+                <div class="left-column">
+                    <div id="newsletter-form">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <form action="#" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hw2_hEMgE4o?si=fVue-SB71wA-vLni"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" style="display:none;">
+            <fieldset>
+                <nav>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Old</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Large</a></li>
+                        <li><a href="#">Small</a></li>
+                    </ul>
+                </nav>
+                <h2>.</h2>
+                <section id="gallery" class="gallery"></section>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>&copy; <span id="currentyear"></span> <span class="footer-name"><img src="images/basketball-icon.png"
+                        alt="basketball-icon" class="basketball-icon">Rommel F. Aunario</span> <img
+                    src="images/basketball-icon.png" alt="basketball-icon" class="basketball-icon"> Philippines</p>
+                    <p id="lastModified" class="highlight"></p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-icons">
+                        <nav class="sociallink">
+                            <a href="https://facebook.com">
+                                <img src="images/facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com">
+                                <img src="images/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://instagram.com">
+                                <img src="images/instagram.svg" alt="Instagram">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        
+            <script>
+                const solarplants = [
+                    {
+                        solarplantname: "Badhla Solar Park",
+                        location: "Bhadlachuhron Ki, Rajasthan, India",
+                        dedicated: "2020, March 20",
+                        area: 21.88,
+                        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYHAOePc6vzjJV-JMw88Bz8qAiR_aJnfdtg&s"
+                    },
+                    {
+                        solarplantname: "Golmud Desert",
+                        location: "Golmud, Qinghai Province, China",
+                        dedicated: "2013, September 4",
+                        area: 1,
+                        imageUrl: "https://news.loomsolar.com/wp-content/uploads/2021/02/Golmud-Desert-Solar-Park-edited-300x169.jpg"
+                    },
+                    {
+                        solarplantname: "Pavagada Taluk",
+                        location: "Tumkur district, Karnataka, India",
+                        dedicated: "2018, March 6",
+                        area: 20.31,
+                        imageUrl: "https://news.loomsolar.com/wp-content/uploads/2021/02/Pavagada-Solar-Park-edited-300x169.jpg"
+                    },
+                    {
+                        solarplantname: "Delingha Molten Salt Tower",
+                        location: "Delingha City, Haixi AP, Qinghai, China.",
+                        dedicated: "2022, September 21",
+                        area: 0.13,
+                        imageUrl: "https://news.loomsolar.com/wp-content/uploads/2021/02/Delingha-Solar-Park-edited-300x169.jpg"
+                    },
+                    {
+                        solarplantname: "Jinchuan Solar Park",
+                        location: "Gansu, China",
+                        dedicated: "2013, November, 19",
+                        area: 9.85,
+                        imageUrl: "https://news.loomsolar.com/wp-content/uploads/2021/02/Jinchuan-Solar-Park-by-wiki-solar-edited-300x169.png"
+                    },
+                    {
+                        solarplantname: "Kunta Ultra Mega Solar Park",
+                        location: "Andhra Pradesh, India",
+                        dedicated: "2016, July, 29",
+                        area: 12,
+                        imageUrl: "https://news.loomsolar.com/wp-content/uploads/2021/02/Ananthapuram-Ultra-Mega-Solar-Park-edited-300x169.jpg"
+                    },
+                    {
+                        solarplantname: "Rewa Ultra Mega Solar Park",
+                        location: "Rewa district, Madhya Pradesh",
+                        dedicated: "2020, January, 3",
+                        area: 6.14,
+                        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTttVxuAK7hvB3WrEoYSrlsL5F17G2nKbSlfg&s"
+                    },
+                    {
+                        solarplantname: "Kurnool Ultra",
+                        location: "Andhra Pradesh, India",
+                        dedicated: "2019, January 8",
+                        area: 9.3,
+                        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxZ84MBBgp7ISZj5hIFQJRfkLr51RNMONyQ&s"
+                    },
+                ];
+        
+                // Function to create a solarplant card
+                function createSolarplantCard(solarplant) {
+                    const card = document.createElement("figure");
+                    card.innerHTML = `
+                        <img src="${solarplant.imageUrl}" alt="${solarplant.solarplantname}" loading="lazy">
+                        <figcaption>
+                            <h3>${solarplant.solarplantname}</h3>
+                            <p>Location: ${solarplant.location}</p>
+                            <p>Dedicated: ${solarplant.dedicated}</p>
+                            <p>Area: ${solarplant.area.toLocaleString()} square miles</p>
+                        </figcaption>
+                    `;
+                    return card;
+                }
+        
+                // Function to display solarplants based on a filter function
+                function displaySolarplants(filterFn) {
+                    const gallery = document.getElementById("gallery");
+                    gallery.innerHTML = "";
+                    solarplants.filter(filterFn).forEach(solarplant => {
+                        const card = createSolarplantCard(solarplant);
+                        gallery.appendChild(card);
+                    });
+                }
+        
+                // Filter functions
+                const filters = {
+                    all: () => true,
+                    old: solarplant => new Date(solarplant.dedicated.split(", ")[0]).getFullYear() < 2015,
+                    new: solarplant => new Date(solarplant.dedicated.split(", ")[0]).getFullYear() > 2015,
+                    large: solarplant => solarplant.area > 10,
+                    small: solarplant => solarplant.area < 10
+                };
+        
+                // Event listener for navigation
+                document.querySelectorAll("nav a").forEach(link => {
+                    link.addEventListener("click", (event) => {
+                        event.preventDefault();
+                        const filterKey = event.target.textContent.toLowerCase();
+                        displaySolarplants(filters[filterKey]);
+                    });
+                });
+        
+                // Initial display of all solarplants
+                displaySolarplants(filters.all);
+        
+                // Existing functions to set current year and last modified date
+                function setCurrentYear() {
+                    const currentYearSpan = document.getElementById('currentyear');
+                    const currentYear = new Date().getFullYear();
+                    currentYearSpan.textContent = currentYear;
+                }
+        
+                function setLastModified() {
+                    const lastModifiedParagraph = document.getElementById('lastModified');
+                    const lastModified = document.lastModified;
+                    lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
+                }
+        
+                const hamburger = document.querySelector('.hamburger');
+                const nav = document.querySelector('nav ul');
+        
+                hamburger.addEventListener('click', () => {
+                    nav.classList.toggle('show');
+                });
+        
+                setCurrentYear();
+                setLastModified();
+            </script>
+        </body>
+        </html>

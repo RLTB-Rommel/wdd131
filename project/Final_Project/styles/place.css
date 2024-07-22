@@ -1,0 +1,225 @@
+/* Global variables */
+:root {
+    --main-color: #0056b3;
+    --secondary-color: #fff;
+    --base-font-size: 16px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* New global variable */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    position: relative; /* Ensure body is relative for absolute positioning */
+}
+
+header {
+    background-color: var(--main-color); /* Using global variable */
+    color: var(--secondary-color); /* Using global variable */
+    padding: 1em;
+    display: flex;
+    justify-content: center; /* Center header content */
+    align-items: center;
+    box-shadow: var(--box-shadow); /* Using global variable */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Larger font size */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger on larger screens */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color); /* Using global variable */
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Left-align text in main section */
+    background-color: #fff;
+    box-shadow: var(--box-shadow); /* Using global variable */
+    border-radius: 8px; /* Rounded corners */
+    position: relative; /* Relative positioning for absolute child elements */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0;
+}
+
+figure {
+    text-align: center;
+    position: relative; /* Relative positioning for image container */
+}
+
+figure img {
+    max-width: 100%; /* Ensure images resize based on container */
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: var(--main-color); /* Using global variable */
+}
+
+footer {
+    background-color: var(--main-color); /* Using global variable */
+    color: var(--secondary-color); /* Using global variable */
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.basketball-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* Specific styles for Palawan project */
+.data,
+.weather {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow); /* Using global variable */
+    width: calc(50% - 20px);
+    max-width: 300px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data {
+    top: 20px;
+    left: 20px;
+}
+
+.weather {
+    bottom: 100px;
+    right: 70px;
+}
+
+.data:hover,
+.weather:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.data h2,
+.weather h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: var(--main-color); /* Using global variable */
+    color: var(--secondary-color); /* Using global variable */
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+.data h2::after {
+    content: '📊'; /* Emoticon for data */
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.weather h2::after {
+    content: '⛅'; /* Emoticon for weather */
+    background-image: url('../images/sunny-weather.svg');
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.data dl,
+.weather dl {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.1rem;
+    font-size: 1rem;
+}
+
+.data dt,
+.weather dt {
+    font-weight: bold;
+}
+
+.data dd,
+.weather dd {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .data,
+    .weather {
+        position: static;
+        width: auto;
+        margin-bottom: 0.5em;
+        transform: none;
+        box-shadow: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--main-color); /* Using global variable */
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -11,19 +11,9 @@ body {
     background-color: #f0f0f0;
 }
 
-header {
-    background-color: #0056b3;
-    color: #fff;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-header h1 {
-    margin: 0;
-    text-align: left; /* Align to the left */
-}
+
+
 
 .hamburger {
     display: block; /* Show hamburger only on mobile */
@@ -36,6 +26,23 @@ header h1 {
     background-color: #fff; /* White color for hamburger lines */
     margin: 4px 0;
     transition: transform 0.3s ease;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reservation-box,
+.activity-preparation-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 nav ul {
@@ -74,8 +81,15 @@ nav a:hover {
 main {
     max-width: 90%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
     text-align: center; /* Center text in main section */
+}
+
+main section.show {
+    display: block;
+    border: 1px solid #ccc; /* Example border style */
+    padding: 20px; /* Example padding */
+    margin: 20px 0; /* Example margin */
 }
 
 .gallery {
@@ -94,6 +108,19 @@ figure img {
     border-radius: 8px;
 }
 
+fieldset {
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
 figcaption {
     margin-top: 10px;
     color: #0d0d0e;
@@ -109,6 +136,15 @@ footer {
 footer p {
     margin: 0;
 }
+.footer-right {
+    grid-column: 3;
+    text-align: right;
+    }
+
+    .social-icons a {
+    margin-left: 1em;
+    margin-bottom:1em ;
+    }
 
 .basketball-icon {
     width: 16px;

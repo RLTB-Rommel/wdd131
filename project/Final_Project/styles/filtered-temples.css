@@ -1,0 +1,174 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+.hamburger {
+    display: block; /* Show hamburger only on mobile */
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* White color for hamburger lines */
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reservation-box,
+.activity-preparation-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none; /* Hide nav items by default */
+}
+
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #0056b3; /* Blue background for nav on mobile */
+    position: absolute;
+    top: 60px; /* Adjust as necessary */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999; /* Ensure it overlays other content */
+}
+
+nav ul.show li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; /* Center text in main section */
+}
+
+main section.show {
+    display: block;
+    border: 1px solid #ccc; /* Example border style */
+    padding: 20px; /* Example padding */
+    margin: 20px 0; /* Example margin */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #0d0d0e;
+}
+
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+.footer-right {
+    grid-column: 3;
+    text-align: right;
+    }
+
+    .social-icons a {
+    margin-left: 1em;
+    margin-bottom:1em ;
+    }
+
+.basketball-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.footer-name {
+    margin: 0 0.5em;
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+
+    nav ul {
+        display: flex; /* Show nav items on larger screens */
+        justify-content: center;
+        align-items: center;
+    }
+}

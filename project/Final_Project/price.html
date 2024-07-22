@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rommel Fortuno Aunario | WDD 131 | Solar Tech Solutions | Pricing </title>
+    <meta name="description" content="I am Rommel Aunario an LDS and currently a student of Software Development in BYU-Idaho. With God's grace I will come out triumphant!">
+    <meta name="author" content="Rommel Aunario">
+    <link rel="stylesheet" href="styles/final_project.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">-->
+
+    <style>
+    header {
+        background: url('images/home_solar.jpg') center/cover no-repeat; 
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        height: 480px;
+    }
+
+    footer {
+        background-color: #3366cc;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1 fr 1fr 1fr; /* Two columns */
+        align-items: right;
+        }
+
+        .footer-left {
+        grid-column: 2;
+        }
+
+        .footer-right {
+        grid-column: 3;
+        text-align: right;
+        }
+
+        .social-icons a {
+        margin-left: 1em;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <nav>
+            <a href="final_home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="price.html">Price List</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="contact-icons">
+            <a href="tel:+11234567890"><i class="fas fa-phone-alt"></i> +1 (123) 456-7890</a>
+            <a href="#"><i class="fas fa-comment-alt"></i> Live Chat</a>
+            <a href="https://rltb-rommel.github.io/wdd131/"><i class="fas fa-info-circle"></i> Info</a>
+        </div>
+    </div>
+
+    <div class="secondary-banner">
+
+        <button class="book-now-btn" onclick="window.location.href='contact.html'">Order Now</button>
+    </div>
+
+    <header>
+        <img src="images/logo-no.png" alt="Your Logo" class="logo">
+        <h1>Solar Tech Solutions</h1>
+    </header>
+
+    <main>
+
+        <div class="hero">
+
+            <article>
+                <img src="images/backpack2.jpg" alt="Rafting Employees">
+                <p>Our company specializes in providing tailored solar energy solutions for various industries. From manufacturing and logistics to agriculture and beyond, we cater to businesses looking to harness the power of solar technology for enhanced efficiency and sustainability. Our clients include industrial leaders seeking reliable energy alternatives to optimize operations and reduce carbon footprints.</br></br>  
+                    
+                    We offer comprehensive solar solutions designed to meet the specific needs of industrial operations. Whether you're looking to reduce energy costs, meet sustainability goals, or enhance operational resilience, Solar Tech Solutions is your trusted partner. Join us in driving industrial innovation through renewable energy — where every installation represents a step towards a greener, more efficient future!</p>
+            </article>
+        </div>
+
+    </main>
+    <!-- Buttons to reveal hidden sections -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="toggleSection('specs')">Panel Specifications</button>
+        <button onclick="toggleSection('panel')">Panel Types</button>
+    </div>
+
+
+
+        
+        <section id="history">
+            <h2 style="color: rgb(170, 15, 15);">Plan for your Solar Tech Solutions Installations!</h2>
+        </section>
+
+        <section id="specs" style="display:none;">
+        <div class="body2">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Solar Panels</th>
+                        <th>Durability</th>
+                        <th>Min/Max Output Power</th>
+                        <th>Efficiency</th>
+                        <th>Warranty</th>
+                        <th>Price Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Polycrystalline Silicon</td>
+                        <td>25 to 35 years</td>
+                        <td>240 watts to 300 watts</td>
+                        <td>13% to 16%</td>
+                        <td>25 years</td>
+                        <td>$0.90 to $1.00 per watt</td>
+                    </tr>
+                    <tr>
+                        <td>Monocrystalline Solar Panels</td>
+                        <td>25 to 40 years</td>
+                        <td>250 watts to 400 watts</td>
+                        <td>15% to 23%</td>
+                        <td>25 years</td>
+                        <td>$1.00 to $1.50 per watt</td>
+                    </tr>
+                    <!-- Add more rows for additional panels -->
+                    <tr>
+                        <td>Thin Film </td>
+                        <td>10 to 20 years</td>
+                        <td>250 watts to 350 watts</td>
+                        <td>7% to 18%</td>
+                        <td>30 years</td>
+                        <td>$0.50 to $1.00 per watt</td>
+                    </tr>
+                    <tr>
+                        <td>Perovskite Cells</td>
+                        <td>20 to 25 years</td>
+                        <td>150 watts to 250 watts</td>
+                        <td>4% to 25%</td>
+                        <td>10 years</td>
+                        <td>$0.10 per watt</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+        </section>
+
+
+        <section id="adventure">
+            <h2 style="color: rgb(170, 15, 15);">Select Your Photovoltaic Cells Panel</h2>
+        </section>
+
+        <section id="panel" style="display:none;">
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label">Polycrystalline Solar Panels</div>
+                    <img src="images/polycrystalline.jpg" alt="Solar Panel Image 1">
+                    
+                    <p>Renowned for their efficiency and durability in converting sunlight into electricity. These panels are composed of silicon crystals melted together, offering a cost-effective alternative to monocrystalline panels.</p>
+                    
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label2">Monocrystalline Solar Panels</div>
+                    <img src="images/monocrystalline.jpg" alt="Solar Panel Image 2">
+                    
+                    <p>Crafted from single-crystal silicon, these panels are distinguished by their uniform appearance and sleek design, making them a preferred choice for residential and commercial installations seeking maximum energy output in limited space.</p>
+                    
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label3">Thin Film Solar Panels</div>
+                    <img src="images/thin_film.jpg" alt="Solar Panel Image 3">
+                    
+                    <p>Lightweight and flexible alternative to traditional crystalline silicon solar panels. Despite typically lower efficiency compared to crystalline silicon panels, thin film solar technology offers advantages in terms of cost-effectiveness, especially in large-scale installations where space is abundant.</p>
+                    
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label4">Perovskite Solar Panels</div>
+                    <img src="images/perovskite.jfif" alt="Solar Panel Image 4">
+                    
+                    <p>Represents a cutting-edge advancement in photovoltaic technology, utilizing materials with a unique crystal structure that efficiently convert sunlight into electricity. These panels are composed of perovskite materials, typically organic-inorganic hybrid compounds like methylammonium lead halides.</p>
+                    
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label4">Solar Shingles</div>
+                    <img src="images/shingles.jpg" alt="Solar Panel Image 5">
+                    
+                    <p>Also known as solar roof tiles, combine the functionality of traditional roofing materials with solar photovoltaic technology. These innovative roofing products are designed to seamlessly integrate into residential and commercial rooftops, providing both weather protection and electricity generation capabilities.</p>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
+        <footer>
+            <div class="footer-left">
+                <p>&copy; <span id="currentyear"></span> Solar Tech Solutions. All rights reserved.</p>
+                <p id="lastModified" class="highlight"></p>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <nav class="sociallink">
+                        <a href="https://facebook.com">
+                            <img src="images/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="images/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                    </nav>  
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Get current year
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+        
+            // Get last modified date of the document
+            var lastModified = document.lastModified;
+            document.getElementById('lastModified').textContent = 'Last modified: ' + lastModified;
+        </script>
+
+</body>
+
+</html>

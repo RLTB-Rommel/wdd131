@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #eef2f4;
+    --secondary-color: #2980b9;
+    --accent1-color: #5DADE2;
+    --accent2-color: #1F618D;
+    --box-shadow-color: #B0E0E6;
+
+    --heading-font: 'Montserrat', Sans;
+    --paragraph-font: 'Montserrat', Sans;
+
+    --nav-background-color: #1b86ce;
+    --nav-link-color: #1F618D;
+    --nav-hover-link-color: #ecf0f1;
+    --nav-hover-background-color: #2980b9;
+}
+
+/* Heading styles grouped together */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    border: 1px solid var(--accent2-color);
+    box-shadow: 0 0 20px rgba(176, 224, 230, 0.8);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+
+p {
+    margin: 0;
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    margin-top: 15px;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+footer {
+    margin-top: 15px;
+    border: 1px solid var(--accent2-color);
+    box-shadow: 0 0 20px rgba(176, 224, 230, 0.8);
+    text-align: center;
+    background-color: #4682b4; /* Steel Blue background color */
+    color: var(--accent1-color);
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}

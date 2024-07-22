@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rommel Fortuno Aunario | WDD 130 | Rapids Water Rafting | Trips </title>
+    <meta name="description" content="I am Rommel Aunario an LDS and currently a student of Software Development in BYU-Idaho. With God's grace I will come out triumphant!">
+    <meta name="author" content="Rommel Aunario">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">-->
+
+    <style>
+    header {
+        background: url('images/home_solar.jpg') center/cover no-repeat; 
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        height: 480px;
+    }
+
+    footer {
+        background-color: #3366cc;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1 fr 1fr 1fr; /* Two columns */
+        align-items: right;
+        }
+
+        .footer-left {
+        grid-column: 2;
+        }
+
+        .footer-right {
+        grid-column: 3;
+        text-align: right;
+        }
+
+        .social-icons a {
+        margin-left: 1em;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="price.html">Price List</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="contact-icons">
+            <a href="tel:+11234567890"><i class="fas fa-phone-alt"></i> +1 (123) 456-7890</a>
+            <a href="#"><i class="fas fa-comment-alt"></i> Live Chat</a>
+            <a href="https://rltb-rommel.github.io/wdd130/"><i class="fas fa-info-circle"></i> Info</a>
+        </div>
+    </div>
+
+    <div class="secondary-banner">
+
+        <button class="book-now-btn" onclick="window.location.href='contact.html'">Order Now</button>
+    </div>
+
+    <header>
+        <img src="images/logo-no.png" alt="Your Logo" class="logo">
+        <h1>Solar Tech Solutions</h1>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <!--<img src="images/hero.jpg" alt="Rapids Water Rafting Hero Image">-->
+            <!--<h1>Rapids Water Rafting</h1>-->
+            <article>
+                <img src="images/backpack.jpg" alt="Rafting Employees">
+                <p>Our company is for thrill-seeking individuals aged 18 to 45, who have a moderate to high disposable
+                    income and a passion for outdoor adventure. These enthusiasts are eager to break free from their
+                    daily routines and seek exhilarating experiences. When accessing the website, they expect
+                    comprehensive information about available rafting trips, including difficulty levels, durations,
+                    safety measures, and pricing details.</br></br>  
+                    
+                    Embark on an unforgettable journey with Rapids Water Rafting Adventure, where the river's pulse
+                    meets the adventurer's heartbeat! Join Rapids and break free from the ordinary! Our trips are
+                    curated for those who seek the extraordinary — a perfect blend of adrenaline, nature, and
+                    camaraderie. Rapids Water Rafting Adventure — where every ripple tells a story of serenity and
+                    excitement!</p>
+            </article>
+        </div>
+
+    </main>
+
+        <section id="history">
+            <h2 style="color: rgb(170, 15, 15);">Plan for Your Next River Rafting Adventure!</h2>
+        </section>
+
+        <div class="body2">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>River</th>
+                        <th>Difficulty Level</th>
+                        <th>Duration</th>
+                        <th>Safety Measures</th>
+                        <th>Pricing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calm Adventure</td>
+                        <td>Libungan River</td>
+                        <td>Calm</td>
+                        <td>Full Day</td>
+                        <td>Professional guides, safety briefing</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Scenic Wilderness Expedition</td>
+                        <td>Pulangi River River</td>
+                        <td>Beginner</td>
+                        <td>Half Day</td>
+                        <td>Basic training, life jackets</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <!-- Add more rows for additional trips -->
+                    <tr>
+                        <td>Thrilling Rapids Adventure</td>
+                        <td>MaradugaoRiver</td>
+                        <td>Beginner-Intermediate</td>
+                        <td>Half Day</td>
+                        <td>Intermediate training, life jackets</td>
+                        <td>$40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Heart Stopping Rapids Expedition</td>
+                        <td>Cagayan River</td>
+                        <td>Advanced</td>
+                        <td>Half Day</td>
+                        <td>Advance training, life jackets</td>
+                        <td>$50.00</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+
+        <section id="adventure">
+            <h2 style="color: rgb(170, 15, 15);">Select Your Cagayan River Rafting Trip</h2>
+        </section>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label">Trip for Young Kids</div>
+                    <img src="images/level1.jpg" alt="Rafting Image 1">
+                    <h3>Nimmo Float Trip</h3>
+                    <p>Embark on a family-friendly adventure with our River Rafting for Young Kids program! Designed for children aged 6 to 12, this thrilling experience introduces the joy of rafting in a safe and supervised environment. Our expert guides ensure a fun and educational journey down the river, teaching young adventurers about teamwork, nature, and water safety. Give your kids unforgettable memories as they navigate gentle rapids and enjoy the beauty of the great outdoors with our specially crafted, age-appropriate rafting trips.</p>
+                    <a href="https://www.google.com" class="learn-more-btn1">Learn More</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label2">Beginner-Intermediate</div>
+                    <img src="images/level2.jpg" alt="Rafting Image 1">
+                    <h3>Lipa River Rafting</h3>
+                    <p>Dive into the excitement of river rafting with our Lipa River Rafting Adventure! Perfect for those new to the thrill of whitewater, this experience offers a gentle introduction to the world of rafting. Our knowledgeable guides provide hands-on instruction, ensuring a safe and enjoyable journey down the river. Discover the basics of paddling, navigation, and teamwork while surrounded by stunning scenery. Whether you're an individual or a group of friends seeking an adrenaline boost, our Beginner's Rafting Adventure is the ideal way to start your whitewater journey.</p>
+                    <a href="https://www.google.com" class="learn-more-btn2">Learn More</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label3">Intermediate</div>
+                    <img src="images/level3.jpg" alt="Rafting Image 1">
+                    <h3>Durun-durun River Rafting</h3>
+                    <p>Experience the next level of excitement with our Durun-durun River Rafting adventure! Tailored for those with some rafting experience, this thrilling journey takes you through a mix of moderate rapids, offering the perfect blend of adrenaline and enjoyment. Our expert guides lead you through the river's twists and turns, enhancing your skills and confidence on the water. Ideal for enthusiasts looking to elevate their rafting prowess, our Intermediate Rafting trip promises an exhilarating ride while exploring the beauty of nature!</p>
+                    <a href="https://www.google.com" class="learn-more-btn3">Learn More</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="employee-info">
+                    <div class="label4">Advanced</div>
+                    <img src="images/level4.jpg" alt="Rafting Image 1">
+                    <h3>Kapi-kapi River Rafting</h3>
+                    <p>Dive into the pinnacle of excitement with our Kapi-kapi River Rafting expedition! Designed for seasoned adventurers seeking the ultimate thrill, this adrenaline-pumping journey navigates through challenging rapids, sharp turns, and dynamic water features. Led by our expert guides, you'll conquer the river's most formidable sections, pushing the limits of skill and courage. Expect an intense, heart-pounding experience that rewards your expertise with every exhilarating twist and turn! If you're an experienced rafter hungry for the most challenging rapids!</p>
+                    <a href="https://www.google.com" class="learn-more-btn4">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <footer>
+            <div class="footer-left">
+                <p>&copy; 2024 Rapids Water Rafting Adventure. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <nav class="sociallink">
+                        <a href="https://facebook.com">
+                            <img src="images/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="images/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                        <!-- Add the link for trips.jpg -->
+                        <a href="images/trips.jpg" target="_blank">Wireframe</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>

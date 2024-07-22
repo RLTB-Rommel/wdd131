@@ -1,0 +1,12 @@
+/* Larger screens */
+main {
+    max-width: 80%;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+nav ul {
+    justify-content: flex-end;
+}

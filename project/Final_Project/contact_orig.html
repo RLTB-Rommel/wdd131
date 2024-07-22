@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rommel Fortuno Aunario | WDD 130 | Rapids Water Rafting | Contact Us </title>
+    <meta name="description" content="This page is for contacting Rapids Water Rafting Company.">
+    <meta name="author" content="Rommel Aunario">
+    <link rel="stylesheet" href="styles/rafting.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.jpeg" alt="Rapids Water Rafting Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rapids Water Rafting Hero Image">
+            <h1>Talk to Us</h1>
+            <article>
+                <img src="images/contact.jpg" alt="Rafting Employees">
+                <p>We value your feedback and inquiries. Whether you have questions about our services, need assistance, or simply want to share your thoughts with us, we're here to help. Feel free to reach out to us using the contact information below. Your satisfaction is our priority, and we look forward to hearing from you.</p>
+            </article>
+        </div>
+    </main>
+
+    <section>
+        <h2>Where to Find Us</h2>
+    </section>
+
+    <div class="body">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3946.2377488319794!2d124.64089037455209!3d8.476247697397326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1707640457611" width="300" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="body-image">
+            <img src="images/center-pic.jpg" alt="Body Image">
+        </div>
+        <div class="body-text-2">
+            <p>
+                <strong><u style="color: orange;">Contact Information</u></strong><br><br>
+                <strong>Email:</strong> <a href="mailto:info@rapidwaterrafting.com">info@rapidwaterrafting.com</a><br>
+                <strong>Phone:</strong> +63957 325 5544<br>
+                <strong>Address:</strong> 28st St, Nazareth, Cagayan de Oro, 9000 Misamis Oriental, Philippines
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <h3>Get to Know Us</h3>
+    </section>
+
+    <div class="fifth-row">
+        <div class="column">
+            <figure>
+                <img src="images/employee1.jpg" alt="Column Image 1">
+                <figcaption>Jessie Mitchell<br> General Manager</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="images/employee2.jpg" alt="Column Image 2">
+                <figcaption>Rafael Guzman <br>Coordinator </figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="images/employee4.jpg" alt="Column Image 3">
+                <figcaption>Omeng Aunario <br> Rafting Manager </figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="images/employee3.jpg" alt="Column Image 4">
+                <figcaption>Vinci Fernandez <br> Safety Manager</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Contact Information</h4>
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Type your email address here..">
+
+            <label for="Purpose">Purpose of the Message</label>
+            <select id="Purpose" name="Purpose">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Reservation request">Reservation Request</option>
+                <option value="Website Suggestion">Website Suggestion</option>
+            </select>
+
+            <!-- Add these radio buttons -->
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contact-email" name="contact-method" value="email">
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone">Phone</label>
+            <input type="radio" id="contact-none" name="contact-method" value="none">
+            <label for="contact-none">None</label>
+
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+
+            <label for="newsletter">Subscribe to the monthly newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+
+            <button type="submit">Please Proceed</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="column"></div>
+            <div class="column">
+                <p>©️ 2024 | Rapids | Rommel Aunario </p>
+            </div>
+            <div class="column">
+                <nav class="sociallink">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
