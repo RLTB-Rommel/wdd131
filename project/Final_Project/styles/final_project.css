@@ -278,7 +278,7 @@ padding: 1em;
 border-radius: 5px;
 margin-bottom: 2em;
 margin-right:20px;
-margin-left: 280px;
+margin-left: 80px;
 width: 35%;
 box-sizing: border-box;
 display: inline-block;
@@ -292,7 +292,7 @@ background-color: #fff;
 padding: 1em;
 border-radius: 5px;
 margin-bottom: 2em;
-margin-right:20px;
+margin-right:100px;
 margin-left: 10px;
 width: 35%;
 box-sizing: border-box;
@@ -337,7 +337,7 @@ font-size: 0.8em;
     #ribbon-image {
     position: relative;
     bottom: 250px; /* Adjust the offset from the bottom */
-    left: 880px;
+    left: 380px;
     right: 10px; /* Adjust the offset from the right */
     max-width: 15%; /* Ensure the image doesn't exceed the container width */
     max-height: 15%; /* Ensure the image doesn't exceed the container height */

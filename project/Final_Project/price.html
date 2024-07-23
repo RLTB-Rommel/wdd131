@@ -57,12 +57,10 @@
     </main>
 
     <!-- Buttons to reveal hidden sections -->
-    <div style="text-align: center; margin-top: 20px;">
-        <button onclick="toggleSection('specs')">Panel Specifications</button>
-        <button onclick="toggleSection('panel')">Panel Types</button>
-    </div>
 
-    <section id="specs" style="display:none;">
+    
+
+    
         <div class="body2">
             <table>
                 <thead>
@@ -112,9 +110,9 @@
                 </tbody>
             </table>
         </div>
-    </section>
+    
 
-    <section id="panel" style="display:none;">
+
         <div class="grid-container">
             <div class="grid-item">
                 <div class="employee-info">
@@ -152,7 +150,7 @@
                 </div>
             </div>
         </div>
-    </section>
+
 
     <footer>
         <div class="footer-left">
@@ -189,10 +187,8 @@
         // Function to toggle section visibility
         function toggleSection(sectionId) {
             var section = document.getElementById(sectionId);
-            if (section.style.display === 'none') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
+            if (section) {
+                section.style.display = (section.style.display === 'none') ? 'block' : 'none';
             }
         }
     </script>
